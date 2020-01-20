@@ -1,1 +1,2 @@
 Hello from file 3
+branch2
