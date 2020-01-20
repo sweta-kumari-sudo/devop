@@ -1,3 +1,2 @@
 Hello from file 3
 modifying contents
-
