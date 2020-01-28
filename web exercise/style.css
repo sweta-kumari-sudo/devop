@@ -1,0 +1,65 @@
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+.space{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+   
+}
+.col{
+    display: 33%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.form1{
+    background-image: url(images/dark.jpg);
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+.content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: navy;
+}
+.col:hover .overlay{
+    opacity: .5;
+}
+
+.welcomSection span {
+    color: purple;
+}
+
+.gallary .col {
+    height: 250px;
+    overflow: hidden;
+}
+.gallary .col img {
+    max-height: 100%;
+}
