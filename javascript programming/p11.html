@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P11</title>
+</head>
+<body>
+    <script>
+        function security(email) {
+            let split = email.split('@');
+            let part1 = split[0];
+            let avg = part1.length/2;
+            part1 = part1.substring(0,(part1.length-avg));
+            part2 = split[1];
+            return part1 + "....@" + part2;
+        }
+        console.log(security("swetakumari@gmail.com"));
+        </script>
+</body>
+</html>

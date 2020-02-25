@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P10</title>
+</head>
+<body>
+    <script>
+        function difference(d1,d2) {
+            dt1 = new Date(d1);
+            dt2 = new Date(d2);
+            year = dt2.getFullYear() - dt1.getFullYear();
+            month = dt2.getMonth() - dt1.getMonth();
+            day = dt2.getDay() - dt1.getDay();
+            diff = [+year,+month,+day];
+            //return year;
+           // return month;
+            return diff;
+        }
+        console.log(difference('2020/02/13','2020/02/14'));
+        </script>
+</body>
+</html>

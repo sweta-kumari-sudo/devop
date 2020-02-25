@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P5</title>
+</head>
+<body>
+    <script>
+        let array1 = [1,2,3,444,5];
+        let array2 = [4,5,6,7,83];
+        let union = [...new Set([...array1,...array2])];
+        console.log(union);
+
+        function arr_diff (a1, a2) {
+
+        let a = [], diff = [];
+
+        for (let i = 0; i < a1.length; i++) {
+            a[a1[i]] = true;
+        }
+
+        for (let i = 0; i < a2.length; i++) {
+        if (a[a2[i]]) {
+            delete a[a2[i]];
+            } else {
+                a[a2[i]] = true;
+    }
+}
+
+        for (var k in a) {
+            diff.push(k);
+        }
+
+        return diff;
+    }
+
+console.log(arr_diff(['a', 'b'], ['a', 'b', 'c', 'd']));
+console.log(arr_diff("abcdghi", "abcde"));
+console.log(arr_diff("zxc", "zxc"));
+        </script>
+</body>
+</html>

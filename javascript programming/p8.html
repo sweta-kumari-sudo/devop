@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P8</title>
+</head>
+<body>
+    <script>
+        function dateDifference(max_dt,min_dt) {
+            let dt1 = new Date(max_dt);
+            let dt2 = new Date(min_dt);
+            let utc1 = Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate());
+            let utc2 = Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate());
+            return Math.floor((utc2 - utc1)/(1000*60*60*24));
+
+        }
+
+        console.log(dateDifference('04/02/2014','11/04/2014'));
+        console.log(dateDifference('12/02/2014','11/04/2014'));
+        </script>
+</body>
+</html>
