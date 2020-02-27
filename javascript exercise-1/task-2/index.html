@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+   <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+        <div class = "container">
+        <div class = "form-row">
+            <div class = "col">
+                <input type = "text" class = "form-control" placeholder="First name" id="firstName">
+            </div>
+            <div class = "col">
+                <input type = "text" class = "form-control" placeholder="Last name" id="lastName">
+            </div>
+            <div class = "col">
+                <button type = "submit" id="addBtn" class = "btn btn-primary mb-4 addBtn" onclick="add()">Add</button>
+                <!--<button type = "submit" id="updateBtn" class = "btn btn-primary mb-4 updateBtn" onclick="update()">Update</button> -->
+            </div>
+        </div>
+    
+
+    <table class = "table table-striped" id="list">
+            <thead>
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+        <tbody id = "tbody">
+
+        </tbody>
+    </table>
+    
+</div>
+    
+<script src="script2.js"></script> 
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stop-watch</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet">
+        
+</head>
+<body>
+    <div class = "container">
+    <div class = "row d-flex justify-content-between">
+    <div id = "clock"></div>
+    <div id = "calendar"></div>
+    </div> 
+    </div>
+    
+    <!--Stopwatch-->
+    <div class = "container">
+        <div id = "display">
+            00:00:00:00
+        </div>
+
+        <div class = "buttons">
+            <button id = "start" onclick="start()">Start</button>
+            <button id = "stop" onclick="stop()">Stop</button>
+            <button id = "resume" onclick="resume()">Resume</button>
+            <button id = "reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+  
+
+</body>
+<script src="script.js"></script>
+</html>
